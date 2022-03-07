@@ -1,58 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>DEV FINDER</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- HEADER -->
     <header>
-        <span class="logo">devfinder</span>
-        <span class="light">light</span>
+      <span class="logo">devfinder</span>
     </header>
+    <!-- END HEADER -->
+
     <main>
-        <div class="search">
-            <img src="./assets/search-icon.svg" alt="search icon">
-            <input type="text">
-            <button>Search</button>
+      <!-- SEARCH -->
+      <div class="search">
+        <img src="./assets/search-icon.svg" alt="search icon" />
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Search GitHub username"
+        />
+        <button id="search-button" type="button">Search</button>
+      </div>
+      <!-- END SEARCH -->
+
+      <!-- CONTENT -->
+      <div class="content">
+        <div class="image-name">
+          <div>
+            <img id="user-image" src="" alt="" />
+          </div>
+          <div>
+            <h3 id="user-name">The Octocat</h3>
+            <span id="user-nickname">@octocat</span>
+            <span id="user-joined">Joined 25 Jan 2022</span>
+          </div>
         </div>
-        <div class="content">
-            <div class="image-name">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h3 class="user-name">The Octocat</h3>
-                    <span class="user-nickname">@octocat</span>
-                    <span class="user-joined">Joined 25 Jan 2022</span>
-                </div>
-            </div>
-            <div class="bio">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic similique beatae voluptates cum odit laborum laboriosam voluptatem illo reprehenderit officiis, ab unde ipsum rem veniam distinctio laudantium et dolorem labore?</p>
-            </div>
-            <div class="info-profile">
-                <div>
-                    <span class="info-title">Repos</span>
-                    <span class="info-number">8</span>
-                </div>
-                <div>
-                    <span class="info-title">Followers</span>
-                    <span class="info-number">432434</span>
-                </div>
-                <div>
-                    <span class="info-title">Following</span>
-                    <span class="info-number">1</span>
-                </div>
-            </div>
-            <div class="contacts">
-                <div><img src="" alt=""><i>San Francisco</i></div>
-                <div><img src="" alt=""><i>www.google</i></div>
-                <div><img src="" alt=""><i>Not available</i></div>
-                <div><img src="" alt=""><i>San Francisco</i></div>
-            </div>
+        <div class="bio-profile"">
+          <p id="bio">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+            similique beatae voluptates cum odit laborum laboriosam voluptatem
+            illo reprehenderit officiis, ab unde ipsum rem veniam distinctio
+            laudantium et dolorem labore?
+          </p>
         </div>
+        <div class="info-profile">
+          <div>
+            <span class="info-title">Repos</span>
+            <span id="number-repos">8</span>
+          </div>
+          <div>
+            <span class="info-title">Followers</span>
+            <span id="number-followers">432434</span>
+          </div>
+          <div>
+            <span class="info-title">Following</span>
+            <span id="number-following">1</span>
+          </div>
+        </div>
+        <div class="contacts">
+          <div><img src="" alt="" /><i id="user-location">San Francisco</i></div>
+          <div><img src="" alt="" /><i id="user-blog">www.google</i></div>
+          <div><img src="" alt="" /><i id="user-twitter">Not available</i></div>
+          <div><img src="" alt="" /><i id="user-company">San Francisco</i></div>
+        </div>
+      </div>
+      <!-- END CONTENT -->
+
     </main>
-</body>
+
+    <!-- SCRIPT -->
+    <script src="./js/script.js"></script>
+    <!-- END SCRIPT -->
+
+  </body>
 </html>
