@@ -1,0 +1,12 @@
+header {
+  height: 4rem;
+}
+
+.logo1,
+.logo2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo2 {
+  color: var(--button-color);
+}
