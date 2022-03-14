@@ -3,3 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --main-bg-color1: #141c2f;
+  --main-bg-color2: #1f2a48;
+  --button-color: #0278fd;
+  --text-color1: #feffff;
+  --text-color2: #838da5;
+  --text-color3: #1b6bc9;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+body {
+  font-family: monospace;
+  height: 100vh;
+  background-color: var(--main-bg-color1);
+  color: var(--text-color1);
+  padding: 1.5rem;
+}
