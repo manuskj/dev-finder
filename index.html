@@ -1,80 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <title>DEV FINDER</title>
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header>
-      <span class="logo">devfinder</span>
-    </header>
-    <!-- END HEADER -->
 
-    <main>
-      <!-- SEARCH -->
-      <div class="search">
-        <img src="./assets/search-icon.svg" alt="search icon" />
-        <input
-          id="search-input"
-          type="text"
-          placeholder="Search GitHub username"
-        />
-        <button id="search-button" type="button">Search</button>
-      </div>
-      <!-- END SEARCH -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <title>devfinder</title>
+</head>
 
-      <!-- CONTENT -->
-      <div class="content">
-        <div class="image-name">
-          <div>
-            <img id="user-image" src="" alt="" />
-          </div>
-          <div>
-            <h3 id="user-name">The Octocat</h3>
-            <span id="user-nickname">@octocat</span>
-            <span id="user-joined">Joined 25 Jan 2022</span>
-          </div>
+<body>
+  <!-- HEADER -->
+  <header>
+    <span class="logo1">dev</span><span class="logo2">finder</span>
+  </header>
+  <!-- END HEADER -->
+
+  <main>
+    <!-- SEARCH -->
+    <div class="search-box">
+      <img src="./assets/svg/search-icon.svg" alt="search-icon" />
+      <input id="search-input" type="text" placeholder="Search GitHub username" />
+      <button id="search-button" type="button">Search</button>
+    </div>
+    <!-- END SEARCH -->
+
+    <!-- CONTENT -->
+    <div class="content-box">
+      <div class="image-name-box">
+        <div class="image-box">
+          <img id="user-image" src="" alt="" />
         </div>
-        <div class="bio-profile"">
-          <p id="bio">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
-            similique beatae voluptates cum odit laborum laboriosam voluptatem
-            illo reprehenderit officiis, ab unde ipsum rem veniam distinctio
-            laudantium et dolorem labore?
-          </p>
-        </div>
-        <div class="info-profile">
-          <div>
-            <span class="info-title">Repos</span>
-            <span id="number-repos">8</span>
-          </div>
-          <div>
-            <span class="info-title">Followers</span>
-            <span id="number-followers">432434</span>
-          </div>
-          <div>
-            <span class="info-title">Following</span>
-            <span id="number-following">1</span>
-          </div>
-        </div>
-        <div class="contacts">
-          <div><img src="" alt="" /><i id="user-location">San Francisco</i></div>
-          <div><img src="" alt="" /><i id="user-blog">www.google</i></div>
-          <div><img src="" alt="" /><i id="user-twitter">Not available</i></div>
-          <div><img src="" alt="" /><i id="user-company">San Francisco</i></div>
+        <div class="user-box">
+          <h3 id="user-name">The Octocat</h3>
+          <span id="user-nickname">@octocat</span>
+          <span id="user-joined">Joined 25 Jan 2022</span>
         </div>
       </div>
-      <!-- END CONTENT -->
+      <div class="bio-profile-box">
+        <p id="bio">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+          similique beatae voluptates cum odit laborum laboriosam voluptatem
+          illo reprehenderit officiis, ab unde ipsum rem veniam distinctio
+          laudantium et dolorem labore?
+        </p>
+      </div>
+      <div class="info-profile-box">
+        <div class="info-box">
+          <span class="info-title">Repos</span>
+          <span id="number-repos">8</span>
+        </div>
+        <div class="info-box">
+          <span class="info-title">Followers</span>
+          <span id="number-followers">432434</span>
+        </div>
+        <div class="info-box">
+          <span class="info-title">Following</span>
+          <span id="number-following">1</span>
+        </div>
+      </div>
+      <div class="contacts-box">
+        <div><img src="./assets/png/location-icon.png" alt="" /><i id="user-location">San Francisco</i></div>
+        <div><img src="./assets/png/blog-icon.png" alt="" /><i id="user-blog">www.google</i></div>
+        <div><img src="./assets/png/twitter-icon.png" alt="" /><i id="user-twitter">Not available</i></div>
+        <div><img src="./assets/png/company-icon.png" alt="" /><i id="user-company">San Francisco</i></div>
+      </div>
+    </div>
+    <!-- END CONTENT -->
 
-    </main>
+  </main>
 
-    <!-- SCRIPT -->
-    <script src="./js/script.js"></script>
-    <!-- END SCRIPT -->
+  <!-- SCRIPT -->
+  <script src="./js/script.js" type="module"></script>
+  <!-- END SCRIPT -->
 
-  </body>
+</body>
+
 </html>
