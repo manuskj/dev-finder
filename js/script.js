@@ -1,3 +1,4 @@
+import { dateFormat } from "./helper/dateFormat.js";
 //INPUT ELEMENTS
 const searchInput = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
@@ -24,19 +25,25 @@ async function getGitHubProfile() {
   const response = await fetch(`https://api.github.com/users/${inputValue}`);
   const userData = await response.json();
 
+  // STORING DATE FORMAT RETURN
+  const dateFormatted = dateFormat(userData.created_at);
+  // END STORING DATE FORMAT RETURN
+
   const user = {
     name: userData.name,
-    login: userData.login,
-    blog: userData.blog,
-    bio: userData.bio,
+    login: `@${userData.login}`,
+    blog: userData.blog ? userData.blog : "Not Available",
+    bio: userData.bio ? userData.bio : "Not Available",
     public_repos: userData.public_repos,
     followers: userData.followers,
     following: userData.following,
-    created_at: new Date(userData.created_at).toLocaleDateString("pt-BR"),
+    created_at: `Joined: ${dateFormatted}`,
     avatar_url: userData.avatar_url,
-    location: userData.location,
-    twitter_username: userData.twitter_username,
-    company: userData.company,
+    location: userData.location ? userData.location : "Not Available",
+    twitter_username: userData.twitter_username
+      ? userData.twitter_username
+      : "Not Available",
+    company: userData.company ? userData.company : "Not Available",
   };
 
   // SET ATTRIBUTES TO ELEMENTS
